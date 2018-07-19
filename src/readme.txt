@@ -1,0 +1,9 @@
+views:存放首页、详情页、店铺、购物车、登录注册等视图面。
+common:存放组件或插件（module--组件，Plugin--插件）。
+static：存放公共样式表如reset.css、js、font等.
+server:存放相关服务。
+img:图库。
+assets:预设文件。
+api:接口地址。
+stay:待定文件夹。
+！！！如果添加新的文件夹，可以在次此添加说明解释，让大家知道。
