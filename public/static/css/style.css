@@ -1,0 +1,26 @@
+html, body, #app{
+    width: 100%;
+    height: 100%;
+}
+.header-box{
+	width: 100%;
+	height: 44px;
+	background-image: radial-gradient(86% -142%, #FF616C 73%, #FD8872 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header-box span{
+	position: absolute;
+	top: 10px;
+}
+.header-box h1{
+	line-height: 44px;
+	text-align: center;
+}
+.location{
+	left: 20px;
+}
+.setting{
+	right: 20px;
+}
