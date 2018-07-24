@@ -5,7 +5,7 @@
       	<header class="header-box">
 		  	<span class="location" @click="locationAction"><i class="iconfont icon-location_light"></i></span>
 	  		<div>
-				<input type="text" placeholder=" 请输入商品名 / 店铺 "/>  
+				<input type="text" class="txt" placeholder=" 请输入商品名 / 店铺 "/>  
 			</div>
 			<span class="setting"><i class="iconfont icon-settings_light"></i></span>
 		</header>
@@ -66,6 +66,9 @@ export default {
 </script>
 
 <style scoped>
+.txt{
+	width: 3rem;
+}
 .banner{
 	width: 100%;
 	height: 161px;
