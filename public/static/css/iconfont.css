@@ -1,5 +1,6 @@
+
 @font-face {font-family: "iconfont";
-  src:url('../fonts/iconfont.ttf?t=1531360430306') format('truetype');
+  src:url('../font/iconfont.ttf?t=1533438195751') format('truetype')
 }
 
 .iconfont {
@@ -10,11 +11,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user:before { content: "\e6a3"; }
+.icon-weixin:before { content: "\e600"; }
 
-.icon-arrow-right:before { content: "\e6f5"; }
+.icon-wenhao:before { content: "\e64e"; }
 
-.icon-arrow-down:before { content: "\e625"; }
+.icon-nongyeblank:before { content: "\e627"; }
 
-.icon-menu:before { content: "\e60b"; }
+.icon-jiansheblank:before { content: "\e659"; }
 
+.icon-arrow-down:before { content: "\e692"; }
+
+.icon-arrow-left:before { content: "\e693"; }
+
+.icon-arrow-right:before { content: "\e694"; }
+
+.icon-arrow-up:before { content: "\e695"; }
+
+.icon-location_light:before { content: "\e6a2"; }
+
+.icon-account:before { content: "\e6a3"; }
+
+.icon-lightning:before { content: "\e794"; }
+
+.icon-huabei:before { content: "\e61e"; }
+
+.icon-dui:before { content: "\e608"; }

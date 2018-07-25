@@ -349,6 +349,15 @@ const   QUERYADDRESS_URL ="/addressController/queryAddress"
 */
 const   DELADDRESS_URL ="/addressController/delAddress"
 
+/*
+32、查询购物车中商品
+请求类型：get请求
+返回类型：json类型	
+参数:
+    Userid:用户id 具体示例请看接口文档
+*/
+const QUERY_GOODS_IN_SHOPPINGCAR_URL="/shoppingcarController/queryGoodsInShoppingcar"
+
 export default {
     DELADDRESS_URL,
     QUERYADDRESS_URL,
@@ -377,7 +386,8 @@ export default {
     QUERYGOODS_BY_SHOPID_URL,
     QUERY_BY_STATUS_URL,
     QUERY_BY_ID_URL,
-    QUERY_BY_INTRODUCTION_URL
+    QUERY_BY_INTRODUCTION_URL,
+    QUERY_GOODS_IN_SHOPPINGCAR_URL,
 }
 
 
