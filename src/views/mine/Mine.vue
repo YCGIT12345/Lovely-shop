@@ -36,10 +36,10 @@
               <a href="#">></a>
             </div>
         <div class="main">
-          <a href="#"><i class=""></i>待支付</a>
-          <a href="#"><i class=""></i>待发货</a>
-          <a href="#"><i class=""></i>待收款</a>
-          <a href="#"><i class=""></i>退款/售后</a>
+          <a href="#" @click="goPay('playing')"><i class=""></i>待支付</a>
+          <a href="#" @click="goPay('playing1')"><i class=""></i>待发货</a>
+          <a href="#" @click="goPay('playing2')"><i class=""></i>待收款</a>
+          <a href="#" @click="goPay('playing3')"><i class=""></i>退款/售后</a>
         </div>
       </div>
 
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-
+import {playingdata,playing1data,playing2data,playing3data} from '../../servers/mineserver.js' 
 
 export default {
   data () {
@@ -97,7 +97,16 @@ export default {
         },
         list(){
           alert("订单跳转接口")
-        }
+        },
+        goPay(flag){
+             this.$router.push({
+                name: 'Pay',
+                params: {
+                    flag
+                }
+            });
+      }
+      
       },
       
 

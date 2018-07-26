@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/swiper.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .cao{position: absolute;left:38%;bottom:10%;border:1px solid #000;border-radius:3rem;}
+    .cao>a{display:block;width: 7rem;height:2rem;text-align: center;line-height: 2rem;color:#000;text-decoration: none}
+    </style>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../src/img/Waiting page.png"></div>
+          <div class="swiper-slide"><img src="../../src/img/Boot page01.png"></div>
+          <div class="swiper-slide"><img src="../../src/img/Boot page02.png"></div>
+          <div class="swiper-slide"><img src="../../src/img/Boot page03.png">
+            <span class="cao"><a href="">点击进入首页</a></span>
+        </div>
+        </div>
+      </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+            let dom = document.querySelector('.swiper-container');
+
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                })
+
+
+        </script>
+
+</body>
+</html>
+
+

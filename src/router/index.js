@@ -6,7 +6,7 @@ import Home from '@/views/home/Home.vue'
 import Classify from '@/views/classify/Classify.vue'
 import Shopping from '@/views/shopping/Shopping.vue'
 import Mine from '@/views/mine/Mine.vue'
-
+import Pay from '@/views/mine/Pay.vue'
 
 Vue.use(Router)
 
@@ -31,6 +31,11 @@ export default new Router({
       path: '/mine',
       name:'Mine',
       component:Mine
+    },
+    {
+      path: '/Pay/:flag',
+      name:'Pay',
+      component:Pay
     },
     {
       path:'**',
