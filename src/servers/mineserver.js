@@ -18,6 +18,8 @@ export function playingdata(){
                             imageUrl: item.imageUrl
                         }
                     })
+
+
                     resolve(data);
                 })
                 .catch(error=>{
