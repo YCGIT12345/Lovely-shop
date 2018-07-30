@@ -1,20 +1,12 @@
 import Vue from 'vue'
-import App from './App'
+import App from './App.vue'
 import router from './router'
 import store from './store'
 
-
-
-import Tabs from './common/Plugin/Tabs.vue'
-Vue.component("my-tabs",Tabs);
-import MyCentent from './common/Plugin/MyCentent.vue'
-Vue.component("my-centent",MyCentent);
-
-
+Vue.config.productionTip = false
 
 new Vue({
-  el: '#app',
-  store,
   router,
+  store,
   render: h => h(App)
-})
+}).$mount('#app')

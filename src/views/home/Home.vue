@@ -3,15 +3,15 @@
   	<div class="home">
 
       	<header class="header-box">
-		  	<span class="location" @click="locationAction"><i class="iconfont icon-location_light"></i></span>
+		  	<span class="location" @click="locationAction"><i></i></span>
 	  		<div>
 				<input type="text" placeholder=" 请输入商品名 / 店铺 "/>  
 			</div>
-			<span class="setting"><i class="iconfont icon-settings_light"></i></span>
+			<span class="setting"><i></i></span>
 		</header>
 		
 
-		<my-centent>
+
 			<div class="banner">轮播图</div>
 			<div class="group">
 				<div class="group-dog">狗群</div>
@@ -42,7 +42,7 @@
 					<li class="suitLi">ALICE D</li>
 				</ul>
 			</div>
-		</my-centent>
+
 
 
 		
