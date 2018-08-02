@@ -13,6 +13,16 @@ import Appcontent from './common/module/Appcontent.vue'
 Vue.component("app-content",Appcontent)
 
 
+//轮播视图组件
+import swiperContainer from './common/Plugin/mySwiper/swiperContainer.vue'
+import swiperSlide from './common/Plugin/mySwiper/swiperSlide.vue'
+Vue.component('swiper-container', swiperContainer);
+Vue.component('swiper-slide', swiperSlide);
+
+
+//价钱过滤器
+import {priceControl} from './filter/priceFilter.js'
+Vue.filter('priceControl',priceControl);
 
 new Vue({
   el: '#app',

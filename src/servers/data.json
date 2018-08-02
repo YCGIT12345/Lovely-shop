@@ -1,0 +1,111 @@
+{
+    "goods": [
+        {
+            "id": 1,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        },
+        {
+            "id": 2,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        },
+        {
+            "id": 3,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        },
+        {
+            "id": 4,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        },
+        {
+            "id": 5,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        },
+        {
+            "id": 6,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        },
+        {
+            "id": 7,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "法国皇家ROYAL CANIN 10个月-8岁小型成犬粮8kg PR27",
+            "collect": "10086人收藏",
+            "bool":false,
+            "price": "￥<i>49.</i>00"
+        }
+    ],
+    "store": [
+        {
+            "id": 1,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 5
+        },
+        {
+            "id": 2,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 4
+        },
+        {
+            "id": 3,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 3
+        },
+        {
+            "id": 4,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 4
+        },
+        {
+            "id": 5,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 4
+        },
+        {
+            "id": 7,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 4
+        },
+        {
+            "id": 8,
+            "img": "../../../static/images/pic_09.jpg",
+            "name": "萌店广州旗舰店",
+            "bool":false,
+            "level": 4
+        }
+    ]
+}

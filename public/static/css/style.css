@@ -5,7 +5,7 @@ html, body, #app{
 }
 .header-box{
 	width: 100%;
-	height: 44px;
+	height: .44rem;
 	background-image: radial-gradient(86% -142%, #FF616C 73%, #FD8872 100%);
 	position: absolute;
 	top: 0;
@@ -13,15 +13,34 @@ html, body, #app{
 }
 .header-box span{
 	position: absolute;
-	top: 10px;
+	top: .12rem;
+	color: #FFFFFF;
+	font-size: .14rem;
 }
-.header-box h1{
-	line-height: 44px;
+.header-box span .iconfont{
+	font-size: .22rem;
+	color: #FFFFFF;
+}
+.header-box div{
+	line-height: .44rem;
 	text-align: center;
 }
-.location{
-	left: 20px;
+.header-box div input{
+	width: 2.53rem;
+	height: .30rem;
+	background: #FFFFFF;
+	border:none; 
+	border-radius: .04rem;
 }
-.setting{
-	right: 20px;
+.header-box div h1{
+	font-family: SourceSansPro-Regular;
+	font-size: .18rem;
+	color: #FFFFFF;
+	text-align: center;
+}
+.locationbtn{
+	left: .15rem;
+}
+.settingbtn{
+	right: .15rem;
 }

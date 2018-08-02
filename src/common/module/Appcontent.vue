@@ -20,7 +20,7 @@ export default {
     .content{
         width:100%;
         position: absolute;
-        top: 0;
+        top: 44px;
         left:0;
         bottom:0;
         overflow: hidden;

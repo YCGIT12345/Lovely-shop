@@ -1,69 +1,70 @@
 <template>
-    <app-content class="bac">
+  <div class="bac">
     <div class="mine">
       <span class="sub" @click='sub'><a>登录</a></span>
       <span class="my"><h2>我的</h2></span>
-    </div>
+    </div>   
+    <app-content>  
       <div class="banner">
         <a><img src="../../img/img1.jpg"></a>
       </div>
       <div class="center">
         <div class="right">
-          <a href="#" @click="product">收藏的商品</a>
+          <a  @click="product">收藏的商品</a>
         </div>
         <div class="left">
-          <a href="#" @click="shop">收藏的店铺</a>
+          <a  @click="shop">收藏的店铺</a>
         </div>
       </div>
       <div class="mypay">
           <div class="extra">
             <div class="right1">
-              <a href="#">我的钱包</a>
-              <a href="#" @click="demoney">账号充值 查看账户信息 ></a>
+              <a href="#"><i class="iconfont icon-pay blue"></i>我的钱包</a>
+              <a href="#" @click="demoney('money')">账号充值 查看账户信息 ></a>
             </div>
           </div>
           <div class="right2">
-          <a href="#" @click="change"><span>￥300.30</span>余额</a>
+          <a href="#"><span>￥300.30</span>余额</a>
         </div>
         <div class="left2">
-          <a href="#" @click="quanzi"><span>3</span>优惠券</a>
+          <a  @click="quanzi"><span>3</span>优惠券</a>
         </div>
       </div>
 
       <div class="more">
         <div class="more_top">
-              <a href="#" @click="list">我的订单</a>
+              <a href="#" @click="list('4')"><i class="iconfont icon-edit yellow"></i>我的订单</a>
               <a href="#">></a>
             </div>
         <div class="main">
-          <a href="#" @click="goPay('playing')"><i class=""></i>待支付</a>
-          <a href="#" @click="goPay('playing1')"><i class=""></i>待发货</a>
-          <a href="#" @click="goPay('playing2')"><i class=""></i>待收款</a>
-          <a href="#" @click="goPay('playing3')"><i class=""></i>退款/售后</a>
+          <a href="#" @click="goPay('0')"><i class="iconfont icon-vipcard red"></i>待支付</a>
+          <a href="#" @click="goPay('1')"><i class="iconfont icon-send red"></i>待发货</a>
+          <a href="#" @click="goPay('2')"><i class="iconfont icon-deliver red"></i>待收货</a>
+          <a href="#" @click="goPay('3')"><i class="iconfont icon-repair red"></i>退款/售后</a>
         </div>
       </div>
 
       <div class="call">
-        <a href="#"><i class=""></i>联系客服</a>
+        <a href="#" @click="kefu"><i class="iconfont icon-servicefill red"></i>联系客服</a>
       </div>
       <div class="call">
-        <a href="#"><i class=""></i>帮助中心</a>
+        <a href="#"><i class="iconfont icon-emojilight blue"></i>帮助中心</a>
       </div>
       <div class="call">
-        <a href="#"><i class=""></i>关于</a>
+        <a href="#"><i class="iconfont icon-moreandroid"></i>关于</a>
       </div>
       <div class="call">
-        <a href="#"><i class=""></i>关于</a>
+        <a href="#"><i class="iconfont icon-moreandroid"></i>关于</a>
       </div>
       <div class="call">
-        <a href="#"><i class=""></i>关于</a>
+        <a href="#"><i class="iconfont icon-moreandroid"></i>关于</a>
       </div>
       <div class="call">
-        <a href="#"><i class=""></i>关于</a>
+        <a href="#"><i class="iconfont icon-moreandroid"></i>关于</a>
       </div>
     </app-content>
   
-  
+  </div>
 </template>
 
 <script>
@@ -78,25 +79,41 @@ export default {
 
   methods:{
         sub(){
-          alert("登录接口")
+          this.$router.push({
+            name:"login"
+          })
         },
         product(){
-          alert("跳转商品")  
+           this.$router.push({
+            name:"foods-c"
+          })
         },
         shop(){
-          alert("跳转店铺")
-        },
-        change(){
-          alert("查询零钱")
+           this.$router.push({
+            name:"store-c"
+          })
         },
         quanzi(){
-          alert("查看优惠券")
+           this.$router.push({
+              name:'ticket'
+            })
         },
-        demoney(){
-          alert("充钱")
+        demoney(money){
+          this.$router.push({
+            name:'Mypurse',
+            params:{
+              money
+            }
+          });
         },
-        list(){
-          alert("订单跳转接口")
+        list(flag){
+          this.$router.push({
+            name:'Pay',
+            params:{flag}
+          })
+        },
+        kefu(){
+          alert("客服不在家！！")
         },
         goPay(flag){
              this.$router.push({
@@ -118,6 +135,7 @@ export default {
 .mine{
   background: #fe7970;
   height:.44rem;
+  
 }
   .sub{
     position: absolute;
@@ -136,6 +154,15 @@ export default {
   .banner{
     height:1.3rem;
     width:100%;
+  }
+  .banner>a{
+    display: block;
+    width:100%;
+    height:100%;
+  }
+  .banner>a>img{
+    width:100%;
+    height:100%;
   }
   .center{
     width:100%;
@@ -200,12 +227,12 @@ export default {
   .more_top>a{display: block;padding:0 10px;}
 
   .main{
+    width:100%;
     height:.62rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 1px solid #eeeeee;
-    
     box-sizing: border-box;
     background: #fff;
 }
@@ -219,5 +246,12 @@ export default {
 .call {
   width:100%;height:.48rem;border-bottom: 1px solid #ccc;line-height: .48rem;background: #fff
 }
-.call a{display: block;padding-left: .1rem}
+.call a{display: block;padding-left: .1rem;width:100%;height:.48rem;line-height: .48rem}
+.iconfont{
+  font-size: .14rem;
+  margin-right: .04rem;
+}
+.blue{color:#FF64F8B2;}
+.yellow{color:#FFFECA38;}
+.red{color:#fd7c70;}
 </style>

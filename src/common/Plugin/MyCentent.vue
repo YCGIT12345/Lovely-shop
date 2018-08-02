@@ -32,9 +32,9 @@ export default {
 .centent{
     width: 100%;
     position: absolute;
-    top: 44px;
+    top: .44rem;
     left: 0;
-    bottom: 0;
+    bottom: .49rem;
     overflow: hidden;
     background:#ebebeb;
 }

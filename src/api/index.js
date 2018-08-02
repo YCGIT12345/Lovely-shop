@@ -349,6 +349,13 @@ const   QUERYADDRESS_URL ="/addressController/queryAddress"
 */
 const   DELADDRESS_URL ="/addressController/delAddress"
 
+/*
+33、 定位
+参数:
+    __t=时间戳
+*/
+const  HOME_CITY_URL = '/v4/api/city'
+
 export default {
     DELADDRESS_URL,
     QUERYADDRESS_URL,
@@ -377,7 +384,8 @@ export default {
     QUERYGOODS_BY_SHOPID_URL,
     QUERY_BY_STATUS_URL,
     QUERY_BY_ID_URL,
-    QUERY_BY_INTRODUCTION_URL
+    QUERY_BY_INTRODUCTION_URL,
+    HOME_CITY_URL
 }
 
 

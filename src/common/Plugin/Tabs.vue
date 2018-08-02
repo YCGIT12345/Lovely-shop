@@ -1,6 +1,6 @@
 <template>
     <nav class="tabs">
-        <li v-for="(item,index) in tabList" @click="tabsAction(index)">
+        <li v-for="(item,index) in tabList" @click="tabsAction(index)" :key="index">
             <i></i>
             <span>{{item.name}}</span>
         </li>
@@ -33,7 +33,7 @@ export default {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #ffffff;
+    background: #fff;
     display: flex;
 }
 .tabs li{

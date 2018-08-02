@@ -1,14 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #000;
-}
-img{
-    display: block;
+@charset "utf-8";
+/* CSS Document */
+html,body,ul,li,ol,h1,h2,h3,h4,h5,h6,img,table,from,input,p,a,b,dd,dl,dt,span{padding:0;margin:0}
+.main{ width:1000px; margin:0 auto;}
+.clearfix:after{content:"";display:block; clear:both; font-size:1px; height:0; overflow:hidden; visibility:hidden;}
+img{border:0; display:block;}
+ul,ol li{list-style:none;}
+li{list-style:none;}
+i{font-style:normol;}
+a{text-decoration:none;font:normal normal 12px SourceSansPro-Regular;color:#000;}
+body{font:normal normal 12px SourceSansPro-Regular;}
+.border0{border:0;}
+i{font-style: normal;}
+input{border: 0;outline: none;}
+.borderl0{border-left:0;}
+.borderr0{border-right:0;}
+.fl{float:left;}
+.fr{float:right;}
+body,html{
+    height: 100%;
+    width: 100%;
 }
